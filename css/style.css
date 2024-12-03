@@ -95,6 +95,7 @@ main {
 .bloco h3 {
     margin: 15px 0 10px;
     color: #006400;
+    margin-left: 5%;
 }
 
 .bloco p {
@@ -136,4 +137,6 @@ footer a:hover {
 footer .footer-content p {
     margin: 8px 0;
 }
-
+#fra {
+    margin-left: 2%;
+}
