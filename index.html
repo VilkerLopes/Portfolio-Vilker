@@ -1,44 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/index.css">
-  <title>Home</title>
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Home</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="container">
-    <div class="wavy-line"></div>
+    <header>
+        <nav class="navbar">
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="html/sobre.html">Sobre</a>
+                <a href="html/projetos.html">Projetos</a>
+                <a href="html/habilidades.html">Habilidades</a>
+                <a href="html/contato.html">Contato</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+      <h1>Bem-vindo ao Meu Portfólio</h1>
+      <p>Explore minhas habilidades e projetos navegando pelas seções abaixo!</p>
   
-    <iframe id ="botão" src="html/manu.html" style="width: 100%; border: none;" ></iframe>
-    <iframe id ="botão" src="html/option.html" style="width: 100%; border: none;" ></iframe>
-    <div class="bloco">
-      <p id="discrition">Olá, sou o Vilker Lopes, um desenvolvedor web apaixonado por criar soluções criativas e funcionais. Meu foco é construir experiências digitais incríveis com HTML, CSS, Javascript, PHP e Python</p>
+      <section id="carreira">
+          <h2>Minha Carreira Estudantil</h2>
+          <div class="grid-container">
+              <a href="#" class="bloco">
+                  <img src="https://th.bing.com/th/id/OIP.s9ObhrwQUtDoRHhVoFJhAQHaE8?w=267&h=180&c=7&r=0&o=5&pid=1.7" alt="Imagem relacionada ao ensino médio">
+                  <p>Concluí o ensino médio em 2024 na EEEP Professor Augusto Torres, destacando-me em competições acadêmicas. Fui bicondenado com menção honrosa pela OBMEP e classificado para a segunda fase da Olimpíada Nacional de Biologia.</p>
+              </a>
+              <div href="#" class="bloco">
+                  <img src="data:image/jpeg;base64,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" alt="Imagem relacionada ao curso técnico em TI">
+                  <p>Concluí também um curso técnico em Tecnologia da Informação, onde adquiri conhecimento prático e teórico em redes, programação, banco de dados e infraestrutura de sistemas.</p>
+              </div>
+              <a href="https://www.coursera.org/user/b7c36d94e68991cdd6260bb920897708" target="_blank" class="bloco">
+                  <img src="https://th.bing.com/th/id/OIP.QcASAa4wJISuJXH1LT2T5wHaE8?rs=1&pid=ImgDetMain" alt="Imagem relacionada ao curso de marketing digital">
+                  <p>Possuo um curso de Marketing Digital e E-commerce com 200h de certificação. Confira no <strong>Coursera</strong>.</p>
+              </a>
+          </div>
+      </section>
+  
+      <section id="projetos">
+          <h2>Principais Projetos</h2>
+          <div class="grid-container">
+              <a  class="bloco">
+                  <img src="https://via.placeholder.com/300x200?text=Projeto+Frotas" alt="Imagem representando o sistema de abastecimento">
+                  <h3>Sistema de Abastecimento para Frotas de Veículos</h3>
+                  <p>Um sistema dedicado ao gerenciamento eficiente de abastecimento para frotas de veículos, otimizando controle de custos e consumo. <em>(Adicione o link futuramente)</em>.</p>
+              </a>
+              <a  class="bloco">
+                  <img src="https://via.placeholder.com/300x200?text=Biblioteca" alt="Imagem representando busca em bibliotecas">
+                  <h3>Busca de Livros em Biblioteca</h3>
+                  <p>Uma aplicação para localizar e consultar livros disponíveis em uma biblioteca, tornando o processo mais ágil e intuitivo. <em>(Adicione o link futuramente)</em>.</p>
+              </a>
+          </div>
+      </section>
+  
+      <section id="habilidades">
+          <h2>Minhas Principais Habilidades</h2>
+          <div class="grid-container">
+              <a  class="bloco">
+                  <img src="https://th.bing.com/th/id/OIP.xi_VY54V535hztHz11VTyQHaFL?w=226&h=180&c=7&r=0&o=5&pid=1.7" alt="Imagem representando desenvolvimento web">
+                  <h3>Desenvolvimento Web</h3>
+                  <p>Criação de sites e sistemas utilizando tecnologias como HTML, CSS, JavaScript, e frameworks modernos.</p>
+              </a>
+              <a  class="bloco">
+                  <img src="https://th.bing.com/th/id/OIP.QcASAa4wJISuJXH1LT2T5wHaE8?rs=1&pid=ImgDetMain" alt="Imagem representando marketing digital">
+                  <h3>Marketing Digital</h3>
+                  <p>Planejamento e execução de estratégias de marketing online, incluindo SEO, anúncios pagos e campanhas sociais.</p>
+              </a>
+              <a  class="bloco">
+                  <img src="https://th.bing.com/th/id/OIP.jklNh-ZrzuFy7ALC36G3kAHaD0?w=313&h=179&c=7&r=0&o=5&pid=1.7" alt="Imagem representando análise de dados">
+                  <h3>Análise de Dados</h3>
+                  <p>Manipulação e visualização de dados para identificar padrões e tomar decisões baseadas em informações.</p>
+              </a>
+              <a  class="bloco">
+                  <img src="https://via.placeholder.com/300x200?text=Gestão" alt="Imagem representando gestão de projetos">
+                  <h3>Gestão de Projetos</h3>
+                  <p>Organização e coordenação de equipes e tarefas para garantir a entrega eficiente de projetos.</p>
+              </a>
+              <a class="bloco">
+                  <img src="https://brandslogos.com/wp-content/uploads/images/python-logo.png" alt="Imagem representando Python">
+                  <h3>Desenvolvimento em Python</h3>
+                  <p>Programação para automação, análise de dados e desenvolvimento de aplicativos simples.</p>
+              </a>
+              <a  class="bloco">
+                  <img src="https://th.bing.com/th/id/OIP.jtK9140a5Psmpldu0Pl2YwHaD3?w=345&h=180&c=7&r=0&o=5&pid=1.7" alt="Imagem representando design gráfico">
+                  <h3>Design Gráfico</h3>
+                  <p>Criação de artes visuais e layouts utilizando ferramentas como Adobe Photoshop e Canva.</p>
+              </a>
+              <a  class="bloco">
+                  <img src="https://via.placeholder.com/300x200?text=Banco+de+Dados" alt="Imagem representando banco de dados">
+                  <h3>Banco de Dados</h3>
+                  <p>Modelagem, administração e consultas em bancos de dados relacionais e não relacionais.</p>
+              </a>
+          </div>
+      </section>
+  </main>
+  
+
+  <br>
+  <br>
+  <br>
+
+  <footer>
+    <div class="footer-content">
+        <p><strong>Email:</strong> <a href="mailto:vilker.0002@gmail.com">vilker.0002@gmail.com</a></p>
+        <p><strong>Localização:</strong> Senador Pompeu, CE</p>
+        <p><strong>Contato:</strong> <a href="tel:+5588981433483">(88) 98143-3483</a></p>
+        <p><strong>Instagram:</strong> <a href="https://instagram.com/vilker017" target="_blank">@vilker017</a></p>
     </div>
+</footer>
 
-    <div id="estudo">
-      <H1>Careira Estudantil</H1>
-    </div>
-    <div id="ensino">
-        <h3>concluino o Ensino medio pela EEEP Professor José Augosto Torres de Senador Pompeu CE</h3>
-    </div>
 
-    <div id="marketing"><a href="https://www.coursera.org/user/b7c36d94e68991cdd6260bb920897708">
-      <h3>Curso de marketing digital e e-comece de 200h pela coursera</h3>
-    </a>
-    </div>
 
-    <div id="tecnico">
-      <h1>Sou tecnico em informatica pela EEEP de Senador Pompeu</h1>
-    </div>
-
-    
-
-    <div id="proj"><H1>principais Projetos</H1></div>
-
-    <div id="hab"><h1>Principais Habilidades e Experiências</h1></div>
-  </div>
-  <script src="js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
