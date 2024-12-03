@@ -1,0 +1,119 @@
+
+#opcao {
+    right: 10%;
+    top: 10%;
+}
+#meuBotao {
+    
+    position: absolute;
+    top: 5%;
+    left: 90%;
+    margin: 4px;
+    border-radius: 3px solid purple;
+    width: 50px;
+    max-width: 50px;
+    padding: 10px;
+    
+}
+/* Botão de menu */
+.menu-btn.animated {
+    position: relative;
+    width: 30px;
+    height: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .menu-btn.animated span {
+    display: block;
+    height: 4px;
+    background-color: purple;
+    
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    position: absolute;
+    left: 0;
+    width: 100%;
+  }
+  
+  .menu-btn.animated span:nth-child(1) { top: 0; }
+  .menu-btn.animated span:nth-child(2) { top: 10px; }
+  .menu-btn.animated span:nth-child(3) { top: 20px; }
+  
+  .menu-btn.animated.active span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 10px;
+  }
+  
+  .menu-btn.animated.active span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .menu-btn.animated.active span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 10px;
+  }
+button:hover {
+    transform: scale(1.2);
+}
+
+/* Estilo para o botão */
+.outrasPg {
+    position: relative;
+    background-color: green; /* Cor de fundo do botão */
+    padding: 10px 20px;
+    border: none; /* Remove a borda do botão */
+    cursor: pointer;
+    border-radius: 12px;
+    top: 3%;
+
+    
+    
+  }
+  
+  .outrasPg a {
+    color: white; /* Cor do texto do link */
+    text-decoration: none; /* Remove o sublinhado do link */
+    font-size: 16px;
+  }
+  
+  .outrasPg a:hover {
+    color: lightgreen; /* Cor do texto quando passar o mouse */
+  }
+
+
+/* Container que vai envolver os elementos */
+.container {
+    position: relative;
+    display: flex; /* Alinha os itens ao longo do eixo X */
+    justify-content: space-between; /* Distribui os itens igualmente com a mesma distância entre eles */
+    align-items: flex-start; /* Alinha os itens ao topo */
+    height: 100px; /* Altura total para os itens se alinharem ao topo */
+    width: 50%;
+    top: 50%px;
+  }
+  
+  /* Estilo para cada item dentro do container */
+  .item {
+    
+    padding: 10px;
+    border-radius: 5px;
+    width: 100px; /* Largura fixa para cada item */
+    text-align: center; /* Centraliza o texto dentro do item */
+  }
+  .titulo {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: white;
+    
+  }
+  
+  h1 {
+    margin: 0%; 
+    
+  }
+  

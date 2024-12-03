@@ -1,0 +1,135 @@
+body {
+    height: 500vh;
+    margin: 0;
+    background: black; /* Gradiente do canto superior direito para o oposto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: transparent;
+  }
+
+  /* Linha ondulada */
+.wavy-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: url('https://www.svgrepo.com/show/23347/wavy-line.svg') repeat-x; /* SVG ondulado como fundo */
+    background-size: 100% 100%; /* Ajusta a imagem para preencher o fundo */
+}
+.bloco {
+    
+    position: absolute;
+    width: 40%;
+    text-align: justify;
+    margin-left: 5%;
+    top: 30vh;
+    color: white;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+
+    
+}
+h1 {
+    color: white;
+}
+@keyframes oscilacao1 {
+    0% {
+      box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.6);
+    }
+    10% {
+      box-shadow: 0 0 12px 4px rgba(255, 255, 255, 0.65);
+    }
+    20% {
+      box-shadow: 0 0 14px 5px rgba(255, 255, 255, 0.7);
+    }
+    30% {
+      box-shadow: 0 0 16px 6px rgba(255, 255, 255, 0.75);
+    }
+    40% {
+      box-shadow: 0 0 18px 7px rgba(255, 255, 255, 0.8);
+    }
+    50% {
+      box-shadow: 0 0 20px 8px rgba(255, 255, 255, 0.85);
+    }
+    60% {
+      box-shadow: 0 0 22px 9px rgba(255, 255, 255, 0.9);
+    }
+    70% {
+      box-shadow: 0 0 24px 10px rgba(255, 255, 255, 0.95);
+    }
+    80% {
+      box-shadow: 0 0 26px 11px rgba(255, 255, 255, 1);
+    }
+    90% {
+      box-shadow: 0 0 28px 12px rgba(255, 255, 255, 1);
+    }
+    100% {
+      box-shadow: 0 0 30px 13px rgba(255, 255, 255, 1);
+    }
+  }
+@keyframes oscilacaoSmall {
+    0% {
+      box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.6); /* sombra inicial */
+    }
+    10% {
+      box-shadow: 0 0 12px 4px rgba(255, 255, 255, 0.65); /* sombra leve aumento */
+    }
+    20% {
+      box-shadow: 0 0 14px 5px rgba(255, 255, 255, 0.7);
+    }
+    30% {
+      box-shadow: 0 0 16px 6px rgba(255, 255, 255, 0.75); /* sombra mais intensa */
+    }
+    40% {
+      box-shadow: 0 0 18px 7px rgba(255, 255, 255, 0.8);
+    }
+    50% {
+      box-shadow: 0 0 20px 8px rgba(255, 255, 255, 1); /* sombra no ponto máximo */
+    }
+    60% {
+      box-shadow: 0 0 18px 7px rgba(255, 255, 255, 0.8);
+    }
+    70% {
+      box-shadow: 0 0 16px 6px rgba(255, 255, 255, 0.75);
+    }
+    80% {
+      box-shadow: 0 0 14px 5px rgba(255, 255, 255, 0.7);
+    }
+    90% {
+      box-shadow: 0 0 12px 4px rgba(255, 255, 255, 0.65);
+    }
+    100% {
+      box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.6); /* sombra inicial de volta */
+    }
+  }
+.bloco:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.8);
+}
+#discrition {
+    position: relative;
+    width: 95%;
+    margin: 2.5%;
+}
+.bloco {
+    border: 5px solid #ff07ff;
+}
+#estudo {
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    top: 50vh;
+    width: 100%;
+}
+#ensino,  {
+
+}
