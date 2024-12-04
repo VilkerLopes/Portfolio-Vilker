@@ -1,12 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/contato.css">
+  <link rel="stylesheet" href="../css/projetos.css">
 </head>
 <body>
-    <iframe id ="botão" src="../html/manu.html" style="width: 100%; border: none;" onload="resizeIframe(this)"></iframe>
-    <iframe id ="botão" src="../html/option.html" style="width: 100%; border: none;"></iframe>
+  <!-- Menu superior -->
+  <header>
+    <div class="menu-hamburguer" onclick="toggleMenu()">☰</div>
+    <nav class="menu" id="menu">
+      <a href="../index.html">Home</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="projetos.html">Projetos</a>
+      <a href="habilidades.html">Habilidades</a>
+      <a href="contato.html" class="active">Contato</a>
+    </nav>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main>
+    <h1>Contato</h1>
+    <div class="contato-bloco">
+      <!-- Foto Pessoal -->
+      <img src="https://via.placeholder.com/200x200?text=Sua+Foto" alt="Sua Foto" class="foto-perfil">
+      <h2>Vilker Lopes</h2>
+      <p>Entre em contato comigo através dos canais abaixo:</p>
+
+      <div class="contato-links">
+        <!-- E-mail -->
+        <a href="mailto:vilker.0002@gmail.com" target="_blank" class="contato-item">
+          <img src="https://via.placeholder.com/50x50?text=Email" alt="E-mail">
+          <span>E-mail</span>
+        </a>
+
+        <!-- WhatsApp -->
+        <a href="https://wa.me/5588981433483" target="_blank" class="contato-item">
+          <img src="https://via.placeholder.com/50x50?text=WhatsApp" alt="WhatsApp">
+          <span>WhatsApp</span>
+        </a>
+
+        <!-- Instagram -->
+        <a href="https://instagram.com/vilker017" target="_blank" class="contato-item">
+          <img src="https://via.placeholder.com/50x50?text=Instagram" alt="Instagram">
+          <span>Instagram</span>
+        </a>
+
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/seu-perfil" target="_blank" class="contato-item">
+          <img src="https://via.placeholder.com/50x50?text=LinkedIn" alt="LinkedIn">
+          <span>LinkedIn</span>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>Email: <a href="mailto:vilker.0002@gmail.com">vilker.0002@gmail.com</a></p>
+    <p>Localização: Senador Pompeu, CE</p>
+    <p>Contato: (88) 98143-3483</p>
+    <p>Instagram: <a href="https://instagram.com/vilker017" target="_blank">@vilker017</a></p>
+  </footer>
+
+  <script src="../js/scripts.js"></script>
 </body>
 </html>

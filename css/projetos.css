@@ -1,0 +1,114 @@
+/* Estilo do Menu Superior */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00cc66; /* Verde */
+    padding: 10px 20px;
+    color: white;
+    position: sticky; /* Fica fixo no topo */
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .menu-hamburguer {
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none; /* Esconde no desktop */
+  }
+  
+  .menu {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .menu a:hover,
+  .menu a.active {
+    background-color: white;
+    color: #00cc66; /* Verde */
+    border-radius: 5px;
+  }
+  
+  /* Menu responsivo para dispositivos menores */
+  @media (max-width: 768px) {
+    .menu-hamburguer {
+      display: block; /* Mostra o ícone do menu */
+    }
+  
+    .menu {
+      display: none; /* Esconde o menu por padrão */
+      flex-direction: column;
+      background-color: #32cd32;
+      position: absolute;
+      top: 50px;
+      right: 20px;
+      width: 200px;
+      border-radius: 5px;
+    }
+  
+    .menu a {
+      padding: 10px;
+      text-align: center;
+    }
+  
+    .menu.show {
+      display: flex; /* Mostra o menu quando ativado */
+    }
+  }
+  /* Grid de Projetos */
+.projetos-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Sempre duas colunas */
+    gap: 20px; /* Espaço entre os blocos */
+    margin: 20px auto;
+    max-width: 1200px; /* Largura máxima */
+  }
+  
+  /* Estilo dos blocos */
+  .bloco {
+    background-color: #ffffff;
+    border: 2px solid #32cd32; /* Borda verde */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .bloco img, 
+  .bloco iframe {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  
+  /* Efeito de zoom ao passar o mouse */
+  .bloco:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Botão de link */
+  .btn-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #32cd32;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .btn-link:hover {
+    background-color: #2a9e2a;
+  }
+  

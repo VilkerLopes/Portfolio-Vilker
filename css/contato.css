@@ -1,0 +1,48 @@
+/* Bloco de Contato */
+.contato-bloco {
+    background-color: #ffffff;
+    border: 2px solid #32cd32; /* Borda verde */
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .foto-perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  
+  /* Links de Contato */
+  .contato-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Ajusta para várias linhas em telas menores */
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .contato-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #32cd32; /* Verde */
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .contato-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+  }
+  
+  .contato-item:hover {
+    transform: scale(1.1);
+    color: #2a9e2a;
+  }
+  

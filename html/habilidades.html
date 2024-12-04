@@ -1,12 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Habilidades</title>
+  <link rel="stylesheet" href="../css/habilidades.css">
+  <link rel="stylesheet" href="../css/projetos.css">
+  <link rel="stylesheet" href="../css/style.css">
+  
 </head>
 <body>
-    <iframe id ="botão" src="../html/manu.html" style="width: 100%; border: none;" onload="resizeIframe(this)"></iframe>
-    <iframe id ="botão" src="../html/option.html" style="width: 100%; border: none;"></iframe>
+  <!-- Menu superior -->
+  <header>
+    <div class="menu-hamburguer" onclick="toggleMenu()">☰</div>
+    <nav class="menu" id="menu">
+      <a href="../index.html">Home</a>
+      <a href="index.html">Index</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="projetos.html">Projetos</a>
+      <a href="habilidades.html" class="active">Habilidades</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main>
+    <h1>Habilidades</h1>
+    <div class="habilidades-container">
+      <!-- Categoria Frontend -->
+      <div class="habilidades-categoria">
+        <h2>Frontend</h2>
+        <div class="habilidade" data-descricao="Linguagem para tipagem estática de JavaScript.">TypeScript</div>
+        <div class="habilidade" data-descricao="Biblioteca para desenvolvimento de interfaces.">React Native</div>
+        <div class="habilidade" data-descricao="Framework React focado em produção e otimização.">Next.js</div>
+        <div class="habilidade" data-descricao="Ferramentas de design como Adobe CC.">UI/UX Design</div>
+      </div>
+
+      <!-- Categoria Backend -->
+      <div class="habilidades-categoria">
+        <h2>Backend</h2>
+        <div class="habilidade" data-descricao="Framework Node.js minimalista.">Express</div>
+        <div class="habilidade" data-descricao="ORM para manipulação de banco de dados.">Sequelize</div>
+        <div class="habilidade" data-descricao="Framework web em Python.">Django</div>
+        <div class="habilidade" data-descricao="Linguagem para análise de dados.">Pandas</div>
+      </div>
+
+      <!-- Categoria Outros -->
+      <div class="habilidades-categoria">
+        <h2>Outros</h2>
+        <div class="habilidade" data-descricao="Banco de dados relacional poderoso.">PostgreSQL</div>
+        <div class="habilidade" data-descricao="Sistema de controle de versão amplamente usado.">Git</div>
+        <div class="habilidade" data-descricao="Plataforma para containerização de aplicações.">Docker</div>
+        <div class="habilidade" data-descricao="Gerenciamento e orquestração de containers.">Kubernetes</div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="footer-content">
+        <p><strong>Email:</strong> <a href="mailto:vilker.0002@gmail.com">vilker.0002@gmail.com</a></p>
+        <p><strong>Localização:</strong> Senador Pompeu, CE</p>
+        <p><strong>Contato:</strong> <a href="tel:+5588981433483">(88) 98143-3483</a></p>
+        <p><strong>Instagram:</strong> <a href="https://instagram.com/vilker017" target="_blank">@vilker017</a></p>
+    </div>
+</footer>
+
+  <script src="../js/scripts.js"></script>
 </body>
 </html>

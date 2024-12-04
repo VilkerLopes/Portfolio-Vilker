@@ -1,12 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Mim</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/projetos.css">
+  <link rel="stylesheet" href="../css/sobre.css">
+  
+
 </head>
 <body>
-    <iframe id ="botão" src="../html/manu.html" style="width: 100%; border: none;" onload="resizeIframe(this)"></iframe>
-    <iframe id ="botão" src="../html/option.html" style="width: 100%; border: none;"></iframe>
+  <!-- Menu superior -->
+  <header>
+    <div class="menu-hamburguer" onclick="toggleMenu()">☰</div>
+    <nav class="menu" id="menu">
+      <a href="../index.html">Home</a>
+      <a href="sobre.html" class="active">Sobre</a>
+      <a href="projetos.html">Projetos</a>
+      <a href="habilidades.html">Habilidades</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main>
+    <h1>Sobre Mim</h1>
+    <div class="sobre-bloco">
+      <!-- Foto -->
+      <img src="https://via.placeholder.com/200x200?text=Sua+Foto" alt="Sua Foto" class="foto-perfil">
+
+      <!-- Texto -->
+      <div class="sobre-texto">
+        <h2>Quem Sou Eu?</h2>
+        <p>Meu nome é <strong>Vilker Lopes</strong>, e sou um apaixonado por tecnologia, desenvolvimento web e marketing digital. Concluí o ensino médio em 2024 na <strong>EEEP Professor Augusto Torres</strong>, onde também obtive meu <strong>técnico em Informática</strong>. Essa formação despertou minha paixão pelo mundo da programação e da tecnologia.</p>
+
+        <p>Durante minha trajetória estudantil, fui <strong>bicampeão com Menção Honrosa na OBMEP</strong> e classificado para a segunda fase da <strong>Olimpíada Nacional de Biologia</strong>. Também conclui um curso de <strong>Marketing Digital e E-commerce</strong> com 200 horas pela Coursera, ampliando minha visão sobre o impacto da tecnologia nos negócios.</p>
+
+        <h2>Meus Projetos</h2>
+        <p>Entre os projetos que desenvolvi, destaco:</p>
+        <ul>
+          <li><strong>Sistema de Abastecimento para Frotas de Veículos:</strong> Uma aplicação para facilitar e organizar o abastecimento de grandes frotas.</li>
+          <li><strong>Sistema de Pesquisa de Livros em Biblioteca:</strong> Uma plataforma para localizar livros de maneira ágil e eficiente.</li>
+        </ul>
+
+        <h2>Minhas Habilidades</h2>
+        <p>Possuo diversas habilidades técnicas e interpessoais, incluindo:</p>
+        <ul>
+          <li>Desenvolvimento Web (HTML, CSS, JavaScript e frameworks)</li>
+          <li>Marketing Digital e Gestão de Projetos</li>
+          <li>Análise de Dados</li>
+          <li>Desenvolvimento em Python</li>
+          <li>Design Gráfico</li>
+          <li>Banco de Dados</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>Email: <a href="mailto:vilker.0002@gmail.com">vilker.0002@gmail.com</a></p>
+    <p>Localização: Senador Pompeu, CE</p>
+    <p>Contato: (88) 98143-3483</p>
+    <p>Instagram: <a href="https://instagram.com/vilker017" target="_blank">@vilker017</a></p>
+  </footer>
+
+  <script src="../js/scripts.js"></script>
 </body>
 </html>

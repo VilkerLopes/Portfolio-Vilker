@@ -1,12 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meus Projetos</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/projetos.css">
 </head>
 <body>
-    <iframe id ="botão" src="../html/manu.html" style="width: 100%; border: none;" onload="resizeIframe(this)"></iframe>
-    <iframe id ="botão" src="../html/option.html" style="width: 100%; border: none;"></iframe>
+  <!-- Menu superior -->
+  <header>
+    <div class="menu-hamburguer" onclick="toggleMenu()">☰</div>
+    <nav class="menu" id="menu">
+      <a href="../index.html">Home</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="projetos.html" class="active">Projetos</a>
+      <a href="habilidades.html">Habilidades</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main>
+    <h1>Meus Projetos</h1>
+    <div class="projetos-container">
+      <!-- Projeto 1: Sistema de Abastecimento -->
+      <div class="bloco">
+        <img src="https://via.placeholder.com/300x200?text=Sistema+de+Abastecimento" alt="Sistema de Abastecimento">
+        <h2>Sistema de Abastecimento</h2>
+        <p>Um sistema desenvolvido para gerenciar o abastecimento de frotas de veículos de forma eficiente e precisa.</p>
+        <a href="#" target="_blank" class="btn-link">Acessar Página</a>
+      </div>
+
+      <!-- Projeto 2: Pesquisa de Livros -->
+      <div class="bloco">
+        <iframe src="https://www.exemplo.com" class="projeto-iframe"></iframe>
+        <h2>Pesquisa de Livros na Biblioteca</h2>
+        <p>Uma aplicação para buscar livros disponíveis em uma biblioteca, facilitando o acesso ao conhecimento.</p>
+        <a href="#" target="_blank" class="btn-link">Acessar Página</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>Email: <a href="mailto:vilker.0002@gmail.com">vilker.0002@gmail.com</a></p>
+    <p>Localização: Senador Pompeu, CE</p>
+    <p>Contato: (88) 98143-3483</p>
+    <p>Instagram: <a href="https://instagram.com/vilker017" target="_blank">@vilker017</a></p>
+  </footer>
+
+  <script src="../js/scripts.js"></script>
 </body>
 </html>
+
