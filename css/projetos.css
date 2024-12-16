@@ -64,51 +64,37 @@ header {
     }
   }
   /* Grid de Projetos */
-.projetos-container {
+  .projetos-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Sempre duas colunas */
-    gap: 20px; /* Espaço entre os blocos */
-    margin: 20px auto;
-    max-width: 1200px; /* Largura máxima */
-  }
-  
-  /* Estilo dos blocos */
-  .bloco {
-    background-color: #ffffff;
-    border: 2px solid #32cd32; /* Borda verde */
-    border-radius: 10px;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+    gap: 20px; /* Espaçamento entre os itens */
+    margin: 20px; /* Margem ao redor da container */
+}
+
+.bloco {
+    background-color: #fff;
     padding: 20px;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .bloco img, 
-  .bloco iframe {
-    width: 100%;
-    height: 200px;
-    border-radius: 5px;
-    margin-bottom: 15px;
-  }
-  
-  /* Efeito de zoom ao passar o mouse */
-  .bloco:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Botão de link */
-  .btn-link {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #32cd32;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-  }
-  
-  .btn-link:hover {
-    background-color: #2a9e2a;
-  }
-  
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 90vh;
+}
+
+.bloco img, .bloco iframe {
+    width: 90%;
+    max-width: 100%; /* Para garantir que as imagens e iframes não ultrapassem o limite */
+    height: 500px;
+    border-radius: 8px;
+}
+
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .projetos-container {
+        grid-template-columns: 1fr; /* 1 coluna em telas menores */
+    }
+}
+
+.Outro {
+  position: absolute;
+  width: 50%;
+}
